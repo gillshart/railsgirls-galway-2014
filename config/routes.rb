@@ -1,4 +1,8 @@
 RailsgirlsGalway2014::Application.routes.draw do
+  root :to => redirect('/places')
+  resources :comments
+
+
   resources :places
 
   devise_for :users
